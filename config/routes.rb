@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  resources :products, only: [:index, :add]
   get 'products/index'
 
   get 'products/add'
